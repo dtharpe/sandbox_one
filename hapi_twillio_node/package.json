@@ -1,0 +1,15 @@
+{
+  "name": "hapi_twillio_node",
+  "version": "0.0.0",
+  "description": "HAPI_test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dtharpe <dtharpe1@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^4.0.0",
+    "twilio": "^1.6.0"
+  }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+<style>
+	table, th , td {
+	  border: 1px solid grey;
+	  border-collapse: collapse;
+	  padding: 5px;
+	}
+	table tr:nth-child(odd) {
+	  background-color: #f1f1f1;
+	}
+	table tr:nth-child(even) {
+	  background-color: #ffffff;
+	}
+</style>
+</head>
+
+<body>
+
+<!-- <div ng-app="">
+ 	<p>Name: <input type="text" ng-model="name"></p>
+ 	<p ng-bind="name"></p>
+</div> -->
+
+<!-- <div data-ng-app="" data-ng-init="firstname='John'">
+ 	<p>Name: <span data-ng-bind="firstname"></span></p>
+ 	<p>Expression: {{ 5+ 5 }}</p>
+</div> -->
+
+<!-- <div data-ng-app="" ng-conroller="personController">
+ 	First: <input type="text" ng-model="firstName"><br>
+ 	Last: <input type="text" ng-model="lastName"><br>
+ 	<br />
+ 	Full Name: {{firstName + " " + lastName}}
+</div> -->
+
+<!-- <div ng-app="" ng-init="person={firstName:'John', lastName:'Doe'}">
+	<p>Name: {{ person.lastName }}</p>
+</div> -->
+
+
+<!-- <div ng-app="" ng-init="points=[1,15,22]">
+	<p>Points: {{points[2]}}</p>
+</div>
+ -->
+
+<!--  <div ng-app="" ng-init="firstName='John'">
+
+<p>Name: <input type="text" ng-model="firstName"></p>
+<p>You wrote: {{ firstName }}</p>
+
+</div>
+ -->
+
+<!--  <div ng-app="" ng-init="names=[
+{name:'Jani',country:'Norway'},
+{name:'Hege',country:'Sweden'},
+{name:'Kai',country:'Denmark'}]">
+
+ 	<ul>
+ 		<li ng-repeat="x in names">
+ 			{{x.name + ', ' + x.country}}
+ 		</li>
+ 	</ul>
+ </div> -->
+
+<!-- <div ng-app="" ng-controller="personController">
+	First Name: <input type="text" ng-model="firstName"><br>
+	Last Name: <input type="text" ng-model="lastName"><br>
+	<br />
+	Full Name: {{fullName('Dicky')}} 
+</div> -->
+
+<!-- 
+<div ng-app="" ng-controller="namesController">
+	<ul>
+		<li ng-repeat="x in names">
+			{{x.name + ' , ' + x.country}}
+		</li>
+	</ul>
+</div> -->
+
+<!-- <div ng-app="" ng-controller="personController">
+	<p>Name: {{ lastName | uppercase }}</p>
+</div>
+ -->
+
+<!-- <div ng-app="" ng-controller="costController">
+<input type="number" ng-model="quantity">
+<input type="number" ng-model="price">
+<p>Total = {{ (quantity * price) | currency }}</p>
+</div>
+ -->
+<!-- 
+<div ng-app="" ng-controller="namesController">
+
+<p><input type="text" ng-model="test"></p>
+
+<ul>
+  <li ng-repeat="x in names | filter:test | orderBy:'country'">
+    {{ (x.name | uppercase) + ', ' + x.country }}
+  </li>
+</ul>
+
+</div> -->
+
+
+<!-- <div ng-app="" ng-controller="customersController"> -->
+	<!-- <ul>
+		<li ng-repeat="x in names">
+			{{x.Name + ' , ' + x.Country}}
+		</li>
+	</ul> -->
+	<!-- <table>
+		<tr ng-repeat="x in names | orderBy : 'Country'">
+			<td>{{ x.Name }}</td>
+			<td>{{ x.Country | uppercase}}</td>
+		</tr>
+	</table> -->
+<!-- </div> -->
+
+<!-- <div ng-app="" ng-controller="personController">
+
+	<button ng-click="toggle()">Toggle</button>
+	<p ng-hide="myVar">
+		Hello....
+	</p>
+</div> -->
+
+<div ng-app="myApp" ng-controller="mycontroller">
+	{{ firstName + " " + lastName }}
+</div>
+
+
+
+<!-- js -->
+
+<script>
+// var personController = function($scope){
+// 	$scope.firstName = "John";
+// 	$scope.lastName = 'Doe';
+// 	$scope.fullName = function(nickname){
+// 		return $scope.firstName + " " + $scope.lastName + " ' " + nickname + " ' ";
+// 	}
+// }
+</script>
+
+<!-- <script src="personController.js"></script> -->
+<!-- <script src="namesController.js"></script> -->
+<!-- <script src="customersController.js"></script> -->
+<script src="myApp.js"></script>
+<script src="myController.js"></script>
+
+</body>
+</html>

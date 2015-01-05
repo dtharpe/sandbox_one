@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Plugin_</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+</head>
+<body>
+ 
+    <h1>Tweets</h1>
+    <div class="tweets">
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="searchTwitter.jquery.js"></script>
+    <script>
+        $('div.tweets').queryTwitter({
+            search: 'CNN',
+            limit: 3,
+            // onComplete: function(){
+            //     console.log(arguments);
+            // },
+            refresh: 4000,
+            transition: 'slideToggle'
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+

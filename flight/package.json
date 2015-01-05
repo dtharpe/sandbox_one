@@ -1,0 +1,15 @@
+{
+  "name": "flight",
+  "version": "0.0.0",
+  "description": "Module for flight",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dtharpe",
+    "<dtharpe1@gmail.com>"
+  ],
+  "author": "dtharpe <dtharpe1@gmail.com>",
+  "license": "ISC"
+}

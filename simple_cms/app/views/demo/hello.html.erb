@@ -1,0 +1,17 @@
+<p>Hello World form Hello...</p>
+
+<%= link_to('Hello Page 2', {:action=>'hello'}) %>
+<br />
+<%= link_to('Hello Index', {:action=>'index'}) %>
+<br />
+<%= link_to('Hello Parameters', {:action=>'hello', :page => 5, :id => 20}) %>
+
+<br />
+ID: <%= params[:id] %><br/>
+ID: <%= @id %><br />
+Page: <%= @page %><br />
+Next Page: <%= @page + 1 %>
+
+<hr />
+
+<%= params.inspect %>

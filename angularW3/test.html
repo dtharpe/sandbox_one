@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+</head>
+
+<body>
+
+	<div ng-app="" ng-controller="dataController">
+		<p>
+			{{showOutput()}}
+		</p>
+	</div>
+<script>
+
+            var dataController = function($scope){
+            	$scope.Description = '';
+            	$scope.Title = '';
+				$scope.showOutput = function(globalData){
+					$scope.Description = globalData[0].Description;
+					$scope.Title = globalData[0].Title;
+					return $scope.Description + '' + $scope.Title;
+				}
+			}
+
+</script>
+</body>
+</html>

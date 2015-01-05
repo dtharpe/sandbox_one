@@ -1,0 +1,23 @@
+<% @page_title = 'Subjects' %>
+
+<div class="container">
+  <div class="subjects index">
+    <h2>Country Data</h2>
+    <table class="table" summary="Country list">
+      <tr class="header">
+        <th>Code</th>
+        <th>Name</th>
+        <th>Continent</th>
+        <th>Region</th>
+      </tr>
+      <% @countrys.each do |country| %>
+      <tr>
+        <td><%= country.Code %></td>
+        <td><%= country.Name %></td>
+        <td><%= country.Continent %></td>
+        <td><%= country.Region %></td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>

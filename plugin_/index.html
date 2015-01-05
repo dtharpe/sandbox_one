@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="icon" href="images/favicon.ico">
+<style>
+	.valid{
+		border: 3px solid green;
+	}
+	.error{
+		border: 3px solid red;
+	}
+</style>
+</head>
+<body>
+
+<p><textarea>dtharpe1@gmail</textarea></p>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="plugin.js"></script>
+<script>
+	// if($("textarea").validEmail()){
+	// 	$("textarea").addClass('valid').removeClass("error");
+	// }else{
+	// 	$("textarea").removeClass('valid').addClass("error");
+	// }
+
+	$('textarea').validEmail({
+		on: 'keyup',
+		success: function(){
+			$(this).addClass('valid').removeClass("error");
+		},
+		failure: function(){
+			$(this).removeClass('valid').addClass("error");
+		}
+	});
+</script>
+</body>
+</html> 
+ 
+
+
+
+ 
+
+
+
+
+    
+   
+                   
+                   
+
+                	
+                
+                    
+              
+                	
+        
+            
+         
+         
+    
+         
+        
+        
+        
+        
+       
+        
+       
+
+
+
+
+
+
+
+
+  
